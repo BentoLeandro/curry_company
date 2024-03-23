@@ -5,13 +5,11 @@ dark = '''
 <style>
     .stSidebar {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        color: rgb(250, 250, 250);
-        color-scheme: dark;        
+        color: rgb(250, 250, 250);              
         background-color: rgb(38, 39, 48);        
     } 
 
     .stSidebarNavSeparator {
-        color-scheme: dark;
         color: rgba(250, 250, 250, 0.6);
         border-bottom: 1px solid rgba(250, 250, 250, 0.2);
     }  
@@ -19,8 +17,7 @@ dark = '''
     .stApp {         
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         background: rgb(14, 17, 23);
-        color: rgb(250, 250, 250);
-        color-scheme: dark;          
+        color: rgb(250, 250, 250);         
     }     
 </style>
 '''
