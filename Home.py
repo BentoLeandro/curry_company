@@ -1,15 +1,30 @@
 import streamlit as st
 from PIL import Image
 
+dark = '''
+<style>
+    .stApp {
+        background-color: #0E1117;
+        color: #FAFAFA;    
+    }
+
+    .stSidebar {
+        background-color: #262730;         
+    }    
+</style>
+'''
+
 st.set_page_config(page_title='Home', page_icon='')
+#st.session_state.theme = "light" 
+st.markdown(dark, unsafe_allow_html=True)
 
 image_path = "logo_data_science.png"
 image = Image.open(image_path)
-st.sidebar.image(image, width=280)
+st.sidebar.image(image, width=280)  
 
 st.sidebar.markdown('# Cury Company')
 st.sidebar.markdown('## Entrega mais rápida da cidade')
-st.sidebar.markdown("___")
+st.sidebar.markdown("___") 
 
 
 
