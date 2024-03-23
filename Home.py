@@ -23,7 +23,7 @@ dark = '''
 '''
 
 st.set_page_config(page_title='Home', page_icon='')
-st.session_state.theme = "dark" 
+#st.session_state.theme = "dark" 
 st.markdown(dark, unsafe_allow_html=True)
 
 image_path = "logo_data_science.png"
