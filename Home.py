@@ -4,11 +4,11 @@ from PIL import Image
 dark = '''
 <style>
     .stApp {
-        background-color: black;           
+        background-color: RGB(14, 17, 23);           
     }
 
     .stSidebar {
-        background-color: #262730;         
+        background-color: RGB(38, 39, 48);         
     }    
 </style>
 '''
