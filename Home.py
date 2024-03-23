@@ -3,8 +3,7 @@ from PIL import Image
 
 dark = '''
 <style>
-    .stSidebar {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    .stSidebar {        
         color: rgb(250, 250, 250);              
         background-color: rgb(38, 39, 48);        
     } 
@@ -14,8 +13,7 @@ dark = '''
         border-bottom: 1px solid rgba(250, 250, 250, 0.2);
     }  
 
-    .stApp {         
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    .stApp {                 
         background: rgb(14, 17, 23);
         color: rgb(250, 250, 250);         
     }     
