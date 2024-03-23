@@ -15,6 +15,9 @@ dark = '''
 </style>
 '''
 
+CURRENT_THEME = "dark"
+IS_DARK_THEME = True
+
 st.set_page_config(page_title='Home', page_icon='')
 #st.session_state.theme = "dark" 
 #st.markdown(dark, unsafe_allow_html=True)
