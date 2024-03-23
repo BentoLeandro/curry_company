@@ -4,18 +4,13 @@ from PIL import Image
 dark = '''
 <style>
     .stSidebar {        
-        color: rgb(250, 250, 250);              
-        background-color: rgb(38, 39, 48);        
+        color: white;              
+        background-color: grey21;        
     } 
-
-    .stSidebarNavSeparator {
-        color: rgba(250, 250, 250, 0.6);
-        border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-    }  
-
+    
     .stApp {                 
-        background: rgb(14, 17, 23);
-        color: rgb(250, 250, 250);         
+        background: black;
+        color: white;         
     }     
 </style>
 '''
