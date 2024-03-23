@@ -3,15 +3,15 @@ from PIL import Image
 
 dark = '''
 <style>
-    .stSidebar {        
-        color: white;              
-        background-color: grey21;        
-    } 
-    
     .stApp {                 
         background: black;
         color: white;         
-    }     
+    }  
+
+    .stSidebar {        
+        color: white;              
+        background-color: grey;        
+    }            
 </style>
 '''
 
