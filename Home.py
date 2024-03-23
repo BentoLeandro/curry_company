@@ -3,13 +3,6 @@ from PIL import Image
 
 dark = '''
 <style>
-    .stApp {         
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        background: rgb(14, 17, 23);
-        color: rgb(250, 250, 250);
-        color-scheme: dark;          
-    }
-
     .stSidebar {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         color: rgb(250, 250, 250);
@@ -21,7 +14,14 @@ dark = '''
         color-scheme: dark;
         color: rgba(250, 250, 250, 0.6);
         border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-    }       
+    }  
+
+    .stApp {         
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        background: rgb(14, 17, 23);
+        color: rgb(250, 250, 250);
+        color-scheme: dark;          
+    }     
 </style>
 '''
 
