@@ -29,6 +29,11 @@ st.markdown("""
             color: #FAFAFA;
         }
             
+        [data-testid=stSidebarNavSeparator] {
+            color: rgba(250, 250, 250, 0.6);
+            border-bottom: 1px solid rgba(250, 250, 250, 0.2);    
+        }    
+            
         h1, h2, h3, h4, h5 {            
             color: #FAFAFA;
         }                        
