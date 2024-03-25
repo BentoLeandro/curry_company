@@ -83,7 +83,7 @@ with tab1:
         with col1:
             st.markdown('#### Avaliação média por Entregador')                        
             df_media_entregador = df_entreg.avalia_media_por_entregador(dados1)
-            st.dataframe(df_media_entregador, use_container_width=True, height=570)    
+            st.dataframe(df_media_entregador, height=570)    
         
         with col2:      
             #2.4 - A avaliação média e o desvio padrão por tipo de tráfego.      
