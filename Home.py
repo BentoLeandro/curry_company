@@ -20,8 +20,13 @@ st.set_page_config(page_title='Home', page_icon='')
 
 st.markdown("""
     <style>
+        [data-testid=stApp] {
+            background-color: #0E1117;
+            color: #FAFAFA;
+        }   
         [data-testid=stSidebar] {
             background-color: #262730;
+            color: #FAFAFA;
         }
     </style>
 """, unsafe_allow_html=True)
