@@ -5,9 +5,8 @@ dark = '''
 <style>
     .stApp {                 
         background: black;
-        color: white;         
-    }  
-
+        color: white;                 
+    }      
     .stSidebar {        
         color: white;              
         background-color: grey;        
@@ -24,10 +23,15 @@ st.markdown("""
             background-color: #0E1117;
             color: #FAFAFA;
         }   
+                              
         [data-testid=stSidebar] {
             background-color: #262730;
             color: #FAFAFA;
         }
+            
+        h1, h2, h3, h4, h5 {            
+            color: #FAFAFA;
+        }                        
     </style>
 """, unsafe_allow_html=True)
 
