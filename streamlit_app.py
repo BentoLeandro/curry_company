@@ -1,55 +1,36 @@
 import streamlit as st
 from PIL import Image
+import barra_lateral as menu
 
-dark = '''
-<style>
-    .stApp {                 
-        background: black;
-        color: white;                 
-    }      
-    .stSidebar {        
-        color: white;              
-        background-color: grey;        
-    }            
-</style>
-'''
-
-
-st.set_page_config(page_title='Home', page_icon='')
-
-st.markdown("""
-    <style>
-        [data-testid=stApp] {
-            background-color: #0E1117;
-            color: #FAFAFA;
-        }   
+css = """<style>
+            [data-testid=stApp] {
+                background-color: #0E1117;
+                color: #FAFAFA;
+            }   
                               
-        [data-testid=stSidebar] {
-            background-color: #262730;
-            color: #FAFAFA;
-        }
+            [data-testid=stSidebar] {
+                background-color: #262730;
+                color: #FAFAFA;
+            }
             
-        [data-testid=stSidebarNavSeparator] {
-            color: rgba(250, 250, 250, 0.6);
-            border-bottom: 1px solid rgba(250, 250, 250, 0.2);    
-        }    
+            [data-testid=stSidebarNavSeparator] {
+                color: rgba(250, 250, 250, 0.6);
+                border-bottom: 1px solid rgba(250, 250, 250, 0.2);    
+            }    
             
-        h1, h2, h3, h4, h5 {            
-            color: #FAFAFA;
-        }                        
-    </style>
-""", unsafe_allow_html=True)
+            h1, h2, h3, h4, h5 {            
+                color: #FAFAFA;
+            }                        
+         </style>
+      """
 
-#st.session_state.theme = "dark" 
-#st.markdown(dark, unsafe_allow_html=True)
+st.set_page_config(page_title='Página Inicial', page_icon='🏠')
 
-image_path = "logo_data_science.png"
-image = Image.open(image_path)
-st.sidebar.image(image, width=280)  
+#st.markdown(css, unsafe_allow_html=True)
 
-st.sidebar.markdown('# Cury Company')
-st.sidebar.markdown('## Entrega mais rápida da cidade')
-st.sidebar.markdown("___") 
+inf_barra = menu.carrega_barra_lateral(None, pmostra_filtro_data=False, 
+                                       pmostra_cond_transito=False, 
+                                       pmostra_cond_clima=False)
 
 
 
