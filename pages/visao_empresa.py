@@ -17,11 +17,12 @@ from PIL import Image
 
 dados1 = limpeza_tratamento_dados.import_limpeza_trat_dados()
 
-st.set_page_config(page_title='Visão Empresa', page_icon='',layout='wide')
+st.set_page_config(page_title='Visão Empresa', layout='wide')
 #===================================================================================================
 #========================================== Barra Lateral ==========================================
 #===================================================================================================
-inf_barra = menu.carrega_barra_lateral(dados1, pmostra_cond_transito=True, 
+inf_barra = menu.carrega_barra_lateral(dados1, pmostra_filtro_data=True, 
+                                       pmostra_cond_transito=True, 
                                        pmostra_cond_clima=False)
 
 date_slider = inf_barra.data_limite
@@ -85,7 +86,8 @@ with tab3:
     with st.container():
         st.markdown('## Localização central de cada cidade por tipo de tráfego')        
         map = graf_emp.local_central_cidade_por_trafego(dados1)
-        folium_static(map, width=1024, height=500)                
+        folium_static(map, width=1024, height=500)   
+                     
 
 
 #===================================================================================================

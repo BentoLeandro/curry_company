@@ -20,11 +20,12 @@ from PIL import Image
 
 dados1 = limpeza_tratamento_dados.import_limpeza_trat_dados()
 
-st.set_page_config(layout="wide")
+st.set_page_config(page_title='Visão Restaurantes', layout="wide")
 #===================================================================================================
 #========================================== Barra Lateral ==========================================
 #===================================================================================================
-inf_barra = menu.carrega_barra_lateral(dados1, pmostra_cond_transito=True, 
+inf_barra = menu.carrega_barra_lateral(dados1, pmostra_filtro_data=True,
+                                       pmostra_cond_transito=True, 
                                        pmostra_cond_clima=True)
 
 date_slider = inf_barra.data_limite
