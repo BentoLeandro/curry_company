@@ -26,15 +26,7 @@ def carrega_barra_lateral(dados1, pmostra_filtro_data,
     st.sidebar.markdown('## Entrega mais rápida da cidade')
     st.sidebar.markdown("___")    
 
-    show_pages(
-    [        
-        Page("Home.py", "Página Inicial", "🏠"),       
-        Page("pages/visao_empresa.py", "Visão Empresa", ":department_store:"),        
-        Page("pages/visao_entregadores.py", "Visão Entregadores", ":motor_scooter:"),
-        Page("pages/visao_restaurantes.py", "Visão Restaurantes", ":knife_fork_plate:"),
-    ]
-    )
-    #add_indentation()      
+     
 
     date_slider = 0
     if pmostra_filtro_data:
